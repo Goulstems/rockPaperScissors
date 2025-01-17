@@ -61,11 +61,28 @@ elif user == "paper":
     #otherwise
         #user wins
 
+elif user == "rock":
+    if bot == "paper":
+        botScore+=1
+    else:
+        userScore+=1
+
 #user scissors
     #bot rock
         #bot wins
     #otherwise
         #user wins
 
+elif user == "scissors":
+    if bot == "rock":
+        botScore+=1
+    else:
+        userScore+=1
+
 #display score (print)
+print("\n[BotScore]: "+str(botScore)
+      +"\n[UserScore]: "+str(userScore))
+
+#TODO:
+#actually print who won
 #play again ? (input)
